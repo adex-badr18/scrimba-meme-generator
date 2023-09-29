@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    max-width: 550px;
+    max-width: 34.375em;
     margin: 0 auto;
 }
 
@@ -9,7 +9,7 @@
 header {
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: #FFFFFF;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 nav {
@@ -18,20 +18,20 @@ nav {
 }
 
 .header--logo {
-    width: 32px;
-    margin-right: 7px;
+    width: 2em;
+    margin-right: 0.44em;
 }
 
 .header--logo-text {
-    font-size: 21px;
+    font-size: 1.3rem;
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.5em;
     letter-spacing: -0.1em;
     margin-right: auto;
 }
 
 .header--course-title {
     font-weight: 500;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 0.75rem;
+    line-height: 0.94em;
 }
