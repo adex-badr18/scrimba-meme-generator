@@ -1,5 +1,37 @@
 .container {
-  width: 100%;
-  max-width: 550px;
-  margin: 0 auto;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.header--logo {
+    width: 32px;
+    margin-right: 2px;
+}
+
+.header--logo-text {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.1em;
+    margin-right: auto;
+}
+
+.header--course-title {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
 }
