@@ -1,6 +1,6 @@
-export default function Meme() {
+export default function MemeForm() {
     return (
-        <section>
+        <section className="meme-form-container">
             <form action="#" className="meme--form">
                 <input type="text" className="meme--input" />
                 <input type="text" className="meme--input" />
