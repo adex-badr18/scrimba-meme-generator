@@ -1,10 +1,12 @@
 export default function MemeForm() {
     return (
-        <section className="meme-form-container">
-            <form action="#" className="meme--form">
-                <input type="text" className="meme--input" />
-                <input type="text" className="meme--input" />
-                <button className="meme--get-image-btn">Get a new meme image 🖼️</button>
+        <section className="memeform--container">
+            <form action="#" className="memeform">
+                <div className="memeform--inputs">
+                    <input type="text" className="memeform--input" aria-label="" placeholder="Shut up" />
+                    <input type="text" className="memeform--input" aria-label="" placeholder="and take my money" />
+                </div>
+                <button className="memeform--get-image-btn">Get a new meme image 🖼️</button>
             </form>
         </section>
     )

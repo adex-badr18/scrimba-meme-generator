@@ -35,3 +35,39 @@ nav {
     font-size: 0.75rem;
     line-height: 0.94em;
 }
+
+/* Meme form component */
+.memeform--container {
+    padding: 2.25em;
+}
+
+.memeform {
+    display: flex;
+    flex-direction: column;
+    gap: 0.94em;
+}
+
+.memeform--inputs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.memeform--input {
+    font-size: 0.75rem;
+    padding: 11px;
+    border-radius: 5px;
+    border: 1px solid #D5D4D8;
+    width: 48%;
+}
+
+.memeform--get-image-btn {
+    width: 100%;
+    padding: 11px 0;
+    font-size: .9rem;
+    font-weight: 600;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: #FFFFFF;
+    letter-spacing: -0.06em;
+    border: unset;
+    border-radius: 5px;
+}
