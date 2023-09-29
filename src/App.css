@@ -37,37 +37,31 @@ nav {
 }
 
 /* Meme form component */
-.memeform--container {
+main {
     padding: 2.25em;
 }
 
-.memeform {
-    display: flex;
-    flex-direction: column;
-    gap: 0.94em;
+.meme--form {
+    display: grid;
+    grid-template: repeat(2, 48%) / repeat(2, 1fr);
+    gap: 1.1em;
 }
 
-.memeform--inputs {
-    display: flex;
-    justify-content: space-between;
-}
-
-.memeform--input {
+.meme--input {
     font-size: 0.75rem;
     padding: 11px;
     border-radius: 5px;
     border: 1px solid #D5D4D8;
-    width: 48%;
 }
 
-.memeform--get-image-btn {
-    width: 100%;
+.meme-btn {
+    grid-column: 1 / -1;
     padding: 11px 0;
     font-size: .9rem;
-    font-weight: 600;
+    font-weight: 700;
     background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
     color: #FFFFFF;
-    letter-spacing: -0.06em;
+    letter-spacing: -0.04em;
     border: unset;
     border-radius: 5px;
 }
