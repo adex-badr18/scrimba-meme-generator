@@ -72,7 +72,5 @@ main {
 
 .meme--image {
     max-width: 100%;
-    /* height: 268px; */
-    /* object-fit: contain; */
     border-radius: 2px;
 }
