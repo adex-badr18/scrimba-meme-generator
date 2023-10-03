@@ -68,9 +68,43 @@ main {
 
 .meme--image-container {
     margin-top: 2.25em;
+    position: relative;
 }
 
 .meme--image {
     max-width: 100%;
     border-radius: 2px;
+}
+
+.meme--image-text {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 90%;
+    margin: 15px 0;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+    margin-bottom: 22px;
 }
