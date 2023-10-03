@@ -1,4 +1,3 @@
-import memesData from "../memesData";
 import { useState, useEffect } from "react";
 
 export default function Meme() {
@@ -15,16 +14,13 @@ export default function Meme() {
             .then(data => setAllMemes(data.data.memes))
     }, [])
 
-    console.log(allMemes);
-
     function getMemeImage() {
-        const memesArray = allMemes; 
-        const randomNumber = Math.floor(Math.random() * memesArray.length);
+        const randomNumber = Math.floor(Math.random() * allMemes.length);
         
         setMeme(prevMeme => (
             {
                 ...prevMeme,
-                randomImage: memesArray[randomNumber].url
+                randomImage: allMemes[randomNumber].url
             }
         ))
     }
