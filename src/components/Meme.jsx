@@ -1,5 +1,5 @@
 import memesData from "../memesData";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Meme() {
     const [meme, setMeme] = useState({
@@ -7,10 +7,16 @@ export default function Meme() {
         bottomText: 'Fear Allah and be dutiful to Him', 
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     });
-    const [allMemeImages, setAllMemeImages] = useState(memesData);
+    const [allMemes, setAllMemes] = useState(memesData);
+
+    useEffect(() => {
+        fetch('https://api.imgflip.com/get_memes')
+            .then(res => res.json())
+            .then(data => setAllMemes(data.data.memes))
+    }, [])
 
     function getMemeImage() {
-        const memesArray = allMemeImages.data.memes; 
+        const memesArray = allMemes; 
         const randomNumber = Math.floor(Math.random() * memesArray.length);
         
         setMeme(prevMeme => (
@@ -27,7 +33,7 @@ export default function Meme() {
         setMeme(prevMeme => {
             return {
                 ...prevMeme,
-                [name]: value
+                [name]:e
             }
         })
     }
