@@ -7,13 +7,15 @@ export default function Meme() {
         bottomText: 'Fear Allah and be dutiful to Him', 
         randomImage: 'http://i.imgflip.com/1bij.jpg'
     });
-    const [allMemes, setAllMemes] = useState(memesData);
+    const [allMemes, setAllMemes] = useState([]);
 
     useEffect(() => {
         fetch('https://api.imgflip.com/get_memes')
             .then(res => res.json())
             .then(data => setAllMemes(data.data.memes))
     }, [])
+
+    console.log(allMemes);
 
     function getMemeImage() {
         const memesArray = allMemes; 
@@ -33,7 +35,7 @@ export default function Meme() {
         setMeme(prevMeme => {
             return {
                 ...prevMeme,
-                [name]:e
+                [name]: value
             }
         })
     }
